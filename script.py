@@ -55,9 +55,9 @@ for v in G.nodes():
         pathlengths.append(p)
 
 print('')
-print("average shortest path length %s" % (sum(pathlengths)/len(pathlengths)))
+print("plus court chemin moyen %s" % (sum(pathlengths)/len(pathlengths)))
 
-#distribution des plus courts chemins of path lengths 
+#distribution des plus courts
 dist={}
 for p in pathlengths:
     if p in dist:
@@ -68,9 +68,9 @@ for p in pathlengths:
 print('')
 print("length #paths")
 
-print("density: %s" % nx.density(G))
-print("radius: %d" % nx.radius(G))
-print("diameter: %d" % nx.diameter(G))
+print("densité : %s" % nx.density(G))
+print("radius : %d" % nx.radius(G))
+print("diamètre : %d" % nx.diameter(G))
 print("eccentricity: %s" % nx.eccentricity(G))
 print("center: %s" % nx.center(G))
 print("periphery: %s" % nx.periphery(G))
